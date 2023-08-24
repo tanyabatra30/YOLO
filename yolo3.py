@@ -11,7 +11,7 @@ with open("./coco.names",'r') as f :
   classes = f.read().splitlines()
 
 # loading image
-img = cv2.imread("./cat_on_table.jpeg")
+img = cv2.imread("./cat.jpeg")
 
 #creating a preprocessed image called blob of size 320x320 
 blob = cv2.dnn.blobFromImage(img,1/255,(320,320),(0,0,0),swapRB = True ,crop = False)
